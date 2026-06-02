@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Inter:wght@100..900&family=Cinzel&family=Montserrat&family=Playball&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-script: "Great Vibes", cursive;
+  --font-sans: "Inter", sans-serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-playball: "Playball", cursive;
+  --font-alex: "Alex Brush", cursive;
+
+  --color-emerald: #064e3b;
+  --color-paper: #ffffff;
+
+  --color-theme-50: #f0fdf4;
+  --color-theme-100: #dcfce7;
+  --color-theme-200: #bbf7d0;
+  --color-theme-300: #86efac;
+  --color-theme-400: #4ade80;
+  --color-theme-500: #22c55e;
+  --color-theme-600: #16a34a;
+  --color-theme-700: #15803d;
+  --color-theme-800: #166534;
+  --color-theme-900: #064e3b;
+
+  --color-primary: #064e3b;
+  --color-gold: #d4af37;
+  --color-gold-light: #f7e7ce;
+  --color-gold-dark: #b8860b;
+  --color-ivory: #ffffff;
+  --color-champagne: #F7E7CE;
+  --color-background: #ffffff;
+}
+
+:root {
+  --primary: var(--color-primary);
+  --ivory: var(--color-ivory);
+  --gold: var(--color-gold);
+  --gold-light: var(--color-gold-light);
+  --background: var(--color-background);
+  --emerald: var(--color-emerald);
+
+  background-color: var(--color-background);
+  color: #1a1a1a;
+  font-family: var(--font-montserrat);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.script {
+  font-family: var(--font-script);
+}
+
+.clip-path-envelope {
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.clip-path-envelope-bottom {
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+/* 3D Transform Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+.website-shell {
+  background:
+    radial-gradient(circle at 18% 14%, rgba(227, 207, 172, 0.12), transparent 38%),
+    radial-gradient(circle at 84% 72%, rgba(209, 184, 138, 0.1), transparent 42%),
+    linear-gradient(180deg, #fffdfb 0%, #fdf9f2 42%, #fffdfb 100%);
+}
+
+
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
+}
+
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-paper);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-emerald);
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+.bg-marble-emerald {
+  background-image:
+    radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%),
+    url('/images/footer_silk_bg.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 20;
+}
+
+.bg-marble-emerald::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  opacity: 0.1;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+
+.gold-foil-edge {
+  position: relative;
+}
+
+.gold-foil-edge::after {
+  content: "";
+  position: absolute;
+  top: -5%;
+  bottom: -5%;
+  width: 40px;
+  right: -20px;
+  background:
+    url("https://www.transparenttextures.com/patterns/stardust.png"),
+    linear-gradient(180deg,
+      #b8860b 0%,
+      #f7e7ce 10%,
+      #d4af37 20%,
+      #996515 30%,
+      #f7e7ce 40%,
+      #b8860b 50%,
+      #d4af37 60%,
+      #f7e7ce 70%,
+      #996515 80%,
+      #d4af37 90%,
+      #b8860b 100%);
+  filter: drop-shadow(4px 0px 8px rgba(0, 0, 0, 0.5));
+  clip-path: polygon(0% 0%, 50% 0%,
+      60% 2%, 40% 4%, 80% 7%, 45% 9%, 65% 12%, 35% 15%, 75% 18%, 40% 21%,
+      85% 24%, 45% 27%, 60% 30%, 35% 33%, 70% 36%, 40% 39%, 80% 42%, 45% 45%,
+      65% 48%, 35% 51%, 75% 54%, 40% 57%, 85% 60%, 45% 63%, 60% 66%, 35% 69%,
+      70% 72%, 40% 75%, 80% 78%, 45% 81%, 65% 84%, 35% 87%, 75% 90%, 40% 93%,
+      85% 96%, 45% 98%, 50% 100%, 0% 100%);
+  z-index: 30;
+}
+
+.text-gold-gradient {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.text-shimmer {
+  background: linear-gradient(to right,
+      #d4af37 20%,
+      #f7e7ce 40%,
+      #f7e7ce 60%,
+      #d4af37 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.bg-premium-colorful {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 182, 193, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 100% 0%, rgba(255, 218, 185, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(255, 192, 203, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(24dfd5, 0.2) 0%, transparent 50%),
+    linear-gradient(135deg, #0d3f38 0%, #045e54 100%);
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.15);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.15);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+
+.text-cute-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #0d3f38 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.card-marble {
+  background: #ffffff;
+  position: relative;
+}
+
+.card-marble::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/white-marble.png");
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.card-marble::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.animate-spin-slow {
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
