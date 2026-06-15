@@ -55,7 +55,7 @@ export default function GallerySection() {
             </span>
           </div>
 
-          <h2 className="font-serif text-5xl font-light tracking-wide text-[#ffffff] md:text-7xl">
+          <h2 className="font-serif text-5xl font-normal tracking-wide text-[#ffffff] md:text-7xl">
             Our <span className="italic text-[#e0f2fe]">Gallery</span>
           </h2>
 

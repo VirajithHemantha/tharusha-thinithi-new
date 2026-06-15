@@ -189,12 +189,12 @@ export default function EnvelopeOpener({ onOpen }: EnvelopeOpenerProps) {
             >
               <div className="mb-3 flex items-center justify-center gap-4">
                 <span className="h-px w-12 bg-gradient-to-r from-transparent to-[#d4af37]/70" />
-                <p className="text-[10px] uppercase tracking-[0.45em] text-white/80">
+                <p className="text-xs uppercase tracking-[0.45em] text-white/80">
                   A Wedding Invitation
                 </p>
                 <span className="h-px w-12 bg-gradient-to-l from-transparent to-[#d4af37]/70" />
               </div>
-              <p className="text-[11px] tracking-[0.24em] text-white/70">
+              <p className="text-[13px] tracking-[0.24em] text-white/70">
                 Unveil the moment
               </p>
             </motion.div>
@@ -393,17 +393,17 @@ export default function EnvelopeOpener({ onOpen }: EnvelopeOpenerProps) {
 
                     {/* Card frame */}
                     <div className="absolute inset-3 rounded-[18px] border border-[#d4af37]/25" />
-                    <div className="absolute left-1/2 top-4 h-8 w-8 -translate-x-1/2 rounded-full border border-[#d4af37]/50 bg-white/70 text-center text-[10px] leading-8 text-[#d4af37]">
+                    <div className="absolute left-1/2 top-4 h-8 w-8 -translate-x-1/2 rounded-full border border-[#d4af37]/50 bg-white/70 text-center text-xs leading-8 text-[#d4af37]">
                       UA
                     </div>
 
                     {/* Card ornament */}
                     <div className="relative text-center">
                       <div className="space-y-2 mb-3">
-                        <p className="text-[9px] uppercase tracking-[0.2em] text-[#d4af37] leading-relaxed">
+                        <p className="text-[13px] uppercase tracking-[0.2em] text-[#d4af37] leading-relaxed">
                           TOGETHER WE REQUEST THE HONOUR OF YOUR PRESENCE
                         </p>
-                        <p className="text-[9px] leading-5 text-slate-500 uppercase">
+                        <p className="text-[13px] leading-5 text-slate-500 uppercase">
                           TO CELEBRATE THE WEDDING OF THEIR CHILDREN
                         </p>
                       </div>
@@ -414,18 +414,18 @@ export default function EnvelopeOpener({ onOpen }: EnvelopeOpenerProps) {
                         <span className="h-px w-10 bg-[#d4af37]/45" />
                       </div>
 
-                      <h2 className="mt-5 font-serif text-4xl font-light tracking-[0.08em] text-[#064e3b]">
+                      <h2 className="mt-5 font-serif text-4xl font-normal tracking-[0.08em] text-[#064e3b]">
                         UDARA
                       </h2>
                       <p className="mt-1 font-serif text-lg italic text-[#d4af37]">&amp;</p>
-                      <h2 className="font-serif text-4xl font-light tracking-[0.08em] text-[#064e3b]">
+                      <h2 className="font-serif text-4xl font-normal tracking-[0.08em] text-[#064e3b]">
                         AROSHANI
                       </h2>
 
-                      <p className="mx-auto mt-4 max-w-[240px] text-[11px] leading-6 text-slate-500 uppercase tracking-widest">
+                      <p className="mx-auto mt-4 max-w-[240px] text-[13px] leading-6 text-slate-500 uppercase tracking-widest">
                         Poru Ceremony at 10.11 AM
                       </p>
-                      <p className="mx-auto mt-1 max-w-[240px] text-[10px] leading-6 text-slate-400 uppercase tracking-widest">
+                      <p className="mx-auto mt-1 max-w-[240px] text-xs leading-6 text-slate-400 uppercase tracking-widest">
                         9.00 AM to 4.00 PM
                       </p>
 
@@ -435,7 +435,7 @@ export default function EnvelopeOpener({ onOpen }: EnvelopeOpenerProps) {
                         <span className="h-px w-10 bg-[#d4af37]/45" />
                       </div>
 
-                      <p className="mt-5 text-[11px] uppercase tracking-[0.36em] text-[#d4af37]">
+                      <p className="mt-5 text-[13px] uppercase tracking-[0.36em] text-[#d4af37]">
                         May 18, 2026
                       </p>
                     </div>
@@ -448,7 +448,7 @@ export default function EnvelopeOpener({ onOpen }: EnvelopeOpenerProps) {
                 initial={{ opacity: 0, y: 10 }}
                 animate={!isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -6 }}
                 transition={{ duration: 0.4 }}
-                className="mt-6 text-center text-[11px] uppercase tracking-[0.45em] text-white/80"
+                className="mt-6 text-center text-[13px] uppercase tracking-[0.45em] text-white/80"
               >
                 Touch to Unveil
               </motion.p>

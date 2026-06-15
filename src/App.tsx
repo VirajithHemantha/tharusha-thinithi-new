@@ -223,7 +223,7 @@ function CountdownTimer() {
           </h2>
           
           <div className="mt-8 flex flex-col items-center space-y-4">
-            <p className="font-montserrat text-[10px] md:text-xs font-bold uppercase tracking-[0.5em] text-[#d4af37]/80">Until March 12th • 2027</p>
+            <p className="font-montserrat text-xs md:text-xs font-bold uppercase tracking-[0.5em] text-[#d4af37]/80">Until March 12th • 2027</p>
             <div className="h-px w-24 bg-gradient-to-r from-transparent via-[#d4af37]/40 to-transparent" />
           </div>
         </motion.div>
@@ -297,7 +297,7 @@ function CountdownTimer() {
           <div className="w-16 h-16 md:w-24 md:h-24 opacity-30 invert pointer-events-none">
             <img src="/floral_corner_theme.png" alt="" className="w-full grayscale brightness-200" />
           </div>
-          <p className="max-w-xl font-montserrat text-[9px] md:text-[11px] font-bold uppercase tracking-[0.4em] text-white/40 leading-relaxed px-4">
+          <p className="max-w-xl font-montserrat text-[13px] md:text-[13px] font-bold uppercase tracking-[0.4em] text-white/80 leading-relaxed px-4">
             A journey of a thousand miles begins with a single step, <br className="hidden md:block"/> and we are counting every one until we say "I do".
           </p>
         </motion.div>
@@ -422,7 +422,7 @@ function AccommodationModal({ isOpen, onClose }: { isOpen: boolean; onClose: () 
         <div className="p-6 border-b border-slate-100 flex items-center justify-between bg-[#fcfcf0]">
           <div>
             <h2 className="font-cinzel text-xl md:text-2xl text-[#0284c7] font-bold">Accommodation Rates</h2>
-            <p className="text-[10px] uppercase tracking-widest text-[#0284c7] mt-1">Eagles Lagoon - Katunayaka</p>
+            <p className="text-xs uppercase tracking-widest text-[#0284c7] mt-1">Eagles Lagoon - Katunayaka</p>
           </div>
           <button onClick={onClose} className="p-2 hover:bg-slate-100 rounded-full transition-colors">
             <X size={24} className="text-slate-400" />
@@ -446,7 +446,7 @@ function AccommodationModal({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                         <div key={room.name} className="flex justify-between items-center gap-4">
                           <div>
                             <p className="text-xs font-bold text-slate-700">{room.name}</p>
-                            <p className="text-[10px] text-slate-400">{room.view}</p>
+                            <p className="text-xs text-slate-400">{room.view}</p>
                           </div>
                           <p className="text-xs font-bold text-[#0284c7] whitespace-nowrap">{room.rate}</p>
                         </div>
@@ -473,7 +473,7 @@ function AccommodationModal({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                         <div key={room.name} className="flex justify-between items-center gap-4">
                           <div>
                             <p className="text-xs font-bold text-slate-700">{room.name}</p>
-                            <p className="text-[10px] text-slate-400">{room.view}</p>
+                            <p className="text-xs text-slate-400">{room.view}</p>
                           </div>
                           <p className="text-xs font-bold text-[#0284c7] whitespace-nowrap">{room.rate}</p>
                         </div>
@@ -486,15 +486,15 @@ function AccommodationModal({ isOpen, onClose }: { isOpen: boolean; onClose: () 
 
             <div className="grid md:grid-cols-3 gap-6 pt-6 border-t border-slate-100">
               <div className="text-center">
-                <p className="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Check In</p>
+                <p className="text-xs uppercase font-bold text-slate-400 tracking-widest mb-1">Check In</p>
                 <p className="font-cinzel text-xl text-[#0284c7]">2:00 PM</p>
               </div>
               <div className="text-center">
-                <p className="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Check Out</p>
+                <p className="text-xs uppercase font-bold text-slate-400 tracking-widest mb-1">Check Out</p>
                 <p className="font-cinzel text-xl text-[#0284c7]">12:00 PM</p>
               </div>
               <div className="text-center">
-                <p className="text-[10px] uppercase font-bold text-slate-400 tracking-widest mb-1">Availability</p>
+                <p className="text-xs uppercase font-bold text-slate-400 tracking-widest mb-1">Availability</p>
                 <p className="font-cinzel text-sm text-[#0284c7] leading-tight">Max 16 Rooms Available</p>
               </div>
             </div>
@@ -502,7 +502,7 @@ function AccommodationModal({ isOpen, onClose }: { isOpen: boolean; onClose: () 
         </div>
 
         <div className="p-6 bg-white border-t border-slate-50 flex justify-center">
-          <p className="text-[10px] text-slate-400 uppercase tracking-[0.2em] italic font-medium">Please contact the resort or couple for bookings</p>
+          <p className="text-xs text-slate-400 uppercase tracking-[0.2em] italic font-medium">Please contact the resort or couple for bookings</p>
         </div>
       </motion.div>
     </div>
@@ -828,7 +828,7 @@ export default function WeddingInvitation() {
                     transition={{ duration: 1, delay: 0.3 }}
                     className="mb-6"
                   >
-                    <span className="font-cinzel text-[#d4af37] text-[10px] md:text-xs tracking-[0.45em] uppercase font-bold">
+                    <span className="font-cinzel text-[#d4af37] text-xs md:text-xs tracking-[0.45em] uppercase font-bold">
                       THE WEDDING INVITATION OF
                     </span>
                     <div className="mt-3 h-px w-20 mx-auto bg-[#d4af37]/30" />
@@ -849,7 +849,7 @@ export default function WeddingInvitation() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.7 }}
-                    className="font-cinzel text-slate-500 text-[10px] md:text-xs tracking-[0.3em] uppercase mb-12"
+                    className="font-cinzel text-slate-500 text-xs md:text-xs tracking-[0.3em] uppercase mb-12"
                   >
                     12 MARCH 2027 • EAGLES LAGOON
                   </motion.p>
@@ -1025,9 +1025,9 @@ export default function WeddingInvitation() {
                     transition={{ duration: 1.2, delay: 0.2 }}
                     className="flex flex-col items-center lg:items-end text-center lg:text-right space-y-4"
                   >
-                    <span className="font-montserrat text-[10px] md:text-xs font-bold uppercase tracking-[0.5em] text-[#d4af37]/60">The Groom</span>
+                    <span className="font-montserrat text-xs md:text-xs font-bold uppercase tracking-[0.5em] text-[#d4af37]/90">The Groom</span>
                     <h2 className="font-alex text-6xl md:text-7xl lg:text-[9rem] text-white leading-none drop-shadow-2xl">Tharusha</h2>
-                    <p className="font-cinzel text-[9px] md:text-[10px] text-white/40 tracking-[0.4em] uppercase max-w-[200px]">Tharusha Sirimanna</p>
+                    <p className="font-cinzel text-[13px] md:text-xs text-white/80 tracking-[0.4em] uppercase max-w-[200px]">Tharusha Sirimanna</p>
                   </motion.div>
 
                   {/* Center: Symbol & Divider */}
@@ -1056,9 +1056,9 @@ export default function WeddingInvitation() {
                     transition={{ duration: 1.2, delay: 0.4 }}
                     className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4"
                   >
-                    <span className="font-montserrat text-[10px] md:text-xs font-bold uppercase tracking-[0.5em] text-[#d4af37]/60">The Bride</span>
+                    <span className="font-montserrat text-xs md:text-xs font-bold uppercase tracking-[0.5em] text-[#d4af37]/90">The Bride</span>
                     <h2 className="font-alex text-6xl md:text-7xl lg:text-[9rem] text-white leading-none drop-shadow-2xl">Thinithi</h2>
-                    <p className="font-cinzel text-[9px] md:text-[10px] text-white/40 tracking-[0.4em] uppercase max-w-[200px]">Thinithi Peiris</p>
+                    <p className="font-cinzel text-[13px] md:text-xs text-white/80 tracking-[0.4em] uppercase max-w-[200px]">Thinithi Peiris</p>
                   </motion.div>
                 </div>
 
@@ -1073,15 +1073,15 @@ export default function WeddingInvitation() {
                   
                   <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
                     <div className="text-center group">
-                      <p className="font-montserrat text-[9px] font-bold text-[#d4af37]/60 uppercase tracking-[0.3em] mb-2 group-hover:text-[#d4af37] transition-colors">When</p>
+                      <p className="font-montserrat text-[13px] font-bold text-[#d4af37]/90 uppercase tracking-[0.3em] mb-2 group-hover:text-[#d4af37] transition-colors">When</p>
                       <p className="font-cinzel text-sm md:text-lg text-white font-medium tracking-widest uppercase">MARCH 12 | 2027</p>
                     </div>
                     <div className="text-center group">
-                      <p className="font-montserrat text-[9px] font-bold text-[#d4af37]/60 uppercase tracking-[0.3em] mb-2 group-hover:text-[#d4af37] transition-colors">Poru Ceremony</p>
+                      <p className="font-montserrat text-[13px] font-bold text-[#d4af37]/90 uppercase tracking-[0.3em] mb-2 group-hover:text-[#d4af37] transition-colors">Poru Ceremony</p>
                       <p className="font-cinzel text-sm md:text-lg text-white font-medium tracking-widest uppercase">08.45 AM</p>
                     </div>
                     <div className="text-center group">
-                      <p className="font-montserrat text-[9px] font-bold text-[#d4af37]/60 uppercase tracking-[0.3em] mb-2 group-hover:text-[#d4af37] transition-colors">Time</p>
+                      <p className="font-montserrat text-[13px] font-bold text-[#d4af37]/90 uppercase tracking-[0.3em] mb-2 group-hover:text-[#d4af37] transition-colors">Time</p>
                       <p className="font-cinzel text-sm md:text-lg text-white font-medium tracking-widest uppercase">9.00 AM - 4.00 PM</p>
                     </div>
                   </div>
@@ -1094,7 +1094,7 @@ export default function WeddingInvitation() {
                   >
                     <div className="inline-flex items-center gap-3 rounded-full border border-[#d4af37]/20 bg-white/5 px-6 py-2 backdrop-blur-md">
                       <Heart className="h-3 w-3 text-[#d4af37] fill-[#d4af37]" />
-                      <span className="text-[9px] font-bold uppercase tracking-[0.3em] text-white/70">Save The Date</span>
+                      <span className="text-[13px] font-bold uppercase tracking-[0.3em] text-white/70">Save The Date</span>
                       <Heart className="h-3 w-3 text-[#d4af37] fill-[#d4af37]" />
                     </div>
                     
@@ -1103,7 +1103,7 @@ export default function WeddingInvitation() {
                       transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                       className="pt-8"
                     >
-                      <ChevronDown className="h-6 w-6 text-[#d4af37]/40" />
+                      <ChevronDown className="h-6 w-6 text-[#d4af37]/80" />
                     </motion.div>
                   </motion.div>
                 </motion.div>
@@ -1145,7 +1145,7 @@ export default function WeddingInvitation() {
                   viewport={{ once: true }}
                   className="flex flex-col items-center mb-16"
                 >
-                  <p className="tracking-[0.4em] md:tracking-[0.7em] text-[#d4af37] text-[9px] md:text-[12px] uppercase font-montserrat font-bold drop-shadow-sm">
+                  <p className="tracking-[0.4em] md:tracking-[0.7em] text-[#d4af37] text-[13px] md:text-[12px] uppercase font-montserrat font-bold drop-shadow-sm">
                     TOGETHER WE REQUEST THE HONOUR OF YOUR PRESENCE
                   </p>
                   <p className="text-slate-500 font-serif text-[15px] md:text-[22px] italic tracking-wide mt-6 mb-2 uppercase">
@@ -1176,7 +1176,7 @@ export default function WeddingInvitation() {
 
                     <div className="flex items-center gap-6 w-full justify-center px-4">
                       <div className="h-[0.5px] w-12 md:w-24 bg-[#d4af37]/40" />
-                      <span className="font-serif text-3xl md:text-7xl text-slate-400 italic font-light">&amp;</span>
+                      <span className="font-serif text-3xl md:text-7xl text-slate-400 italic font-normal">&amp;</span>
                       <div className="h-[0.5px] w-12 md:w-24 bg-[#d4af37]/40" />
                     </div>
 
@@ -1187,12 +1187,12 @@ export default function WeddingInvitation() {
                     </div>
 
                     <div className="pt-8 md:pt-12 w-full space-y-4">
-                      <p className="font-montserrat text-[9px] md:text-[13px] tracking-[0.3em] text-slate-600 uppercase font-bold text-center leading-relaxed max-w-2xl mx-auto">
-                        Loving Daughter of <br className="md:hidden" /> Mr. Peiris & Mrs. Jayarathne
+                      <p className="font-montserrat text-[13px] md:text-[13px] tracking-[0.3em] text-slate-600 uppercase font-bold text-center leading-relaxed max-w-2xl mx-auto">
+                        Loving Son of <br className="md:hidden" /> Mr. Thissa Sirimanna & Mrs. Sirimanna
                       </p>
                       <div className="h-px w-8 bg-[#d4af37]/20 mx-auto" />
-                      <p className="font-montserrat text-[9px] md:text-[13px] tracking-[0.3em] text-slate-600 uppercase font-bold text-center leading-relaxed max-w-2xl mx-auto">
-                        Loving Son of <br className="md:hidden" /> Mr. Thissa Sirimanna & Mrs. Sirimanna
+                      <p className="font-montserrat text-[13px] md:text-[13px] tracking-[0.3em] text-slate-600 uppercase font-bold text-center leading-relaxed max-w-2xl mx-auto">
+                        Loving Daughter of <br className="md:hidden" /> Mr. Peiris & Mrs. Jayarathne
                       </p>
                     </div>
                   </motion.div>
@@ -1221,7 +1221,7 @@ export default function WeddingInvitation() {
                       <div className="flex items-center gap-4 mb-2">
                         <div className="w-12 h-[1px] bg-[#0284c7]" />
                         <span className="text-[#C9A227]">✦</span>
-                        <span className="text-[#0284c7] font-bold uppercase tracking-[0.4em] text-[10px]">
+                        <span className="text-[#0284c7] font-bold uppercase tracking-[0.4em] text-xs">
                           T H E | V E N U E
                         </span>
                       </div>
@@ -1240,7 +1240,7 @@ export default function WeddingInvitation() {
                           Eagles Lagoon - Katunayaka
                         </p>
                       </div>
-                      <p className="text-[#0284c7]/70 text-sm md:text-base tracking-widest uppercase font-light leading-loose">
+                      <p className="text-[#0284c7]/70 text-sm md:text-base tracking-widest uppercase font-normal leading-loose">
                         (Poru Ceremony at 08.45 AM) FRIDAY, 12 MARCH 2027. From 9.00 AM to 4.00 PM.
                       </p>
                     </div>
@@ -1250,7 +1250,7 @@ export default function WeddingInvitation() {
                         onClick={() =>
                           window.open("https://share.google/qo9RB7hbJSVbUb5uv", "_blank")
                         }
-                        className="group relative inline-flex items-center justify-center gap-4 px-10 py-5 bg-[#0284c7] text-white text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] overflow-hidden transition-all hover:bg-[#0369a1]"
+                        className="group relative inline-flex items-center justify-center gap-4 px-10 py-5 bg-[#0284c7] text-white text-xs md:text-xs font-bold uppercase tracking-[0.3em] overflow-hidden transition-all hover:bg-[#0369a1]"
                       >
                         <MapPin className="w-4 h-4 transition-transform group-hover:-translate-y-1" />
                         Get Directions
@@ -1345,8 +1345,8 @@ export default function WeddingInvitation() {
                     <div className="absolute inset-3 md:inset-4 border-[0.5px] border-[#d4af37]/20 pointer-events-none" />
 
                     <div className="w-full flex flex-col items-center mt-6 relative z-10 px-2 md:px-6">
-                      <p className="font-montserrat text-[10px] md:text-[11px] tracking-[0.2em] text-slate-500 uppercase font-medium mb-2 text-center leading-relaxed">
-                        RSVP - Tharusha 0774085454 | Thinithi 0742195454
+                      <p className="font-montserrat text-xs md:text-[13px] tracking-[0.2em] text-slate-500 uppercase font-medium mb-2 text-center leading-relaxed">
+                        RSVP - Tharusha 0773224119 | Thinithi 0742195454
                       </p>
 
                       <div className="flex items-center justify-center gap-4 w-full mb-8">
@@ -1359,7 +1359,7 @@ export default function WeddingInvitation() {
 
                       <form className="w-full space-y-8 text-left max-w-sm mt-4" onSubmit={handleRsvpSubmit}>
                         <div className="relative group">
-                          <label className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] absolute -top-4 left-0 transition-colors group-focus-within:text-[#d4af37]">Name(s)</label>
+                          <label className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] absolute -top-4 left-0 transition-colors group-focus-within:text-[#d4af37]">Name(s)</label>
                           <input
                             type="text"
                             placeholder="M.................................................."
@@ -1374,7 +1374,7 @@ export default function WeddingInvitation() {
                         </div>
 
                         <div className="relative group pt-4">
-                          <label className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] absolute top-0 left-0 transition-colors group-focus-within:text-[#d4af37]">Area / City</label>
+                          <label className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] absolute top-0 left-0 transition-colors group-focus-within:text-[#d4af37]">Area / City</label>
                           <input
                             type="text"
                             placeholder="Where are you coming from?"
@@ -1389,7 +1389,7 @@ export default function WeddingInvitation() {
                         </div>
 
                         <div className="space-y-5 pt-6">
-                          <label className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">
+                          <label className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em]">
                             Will you attend?
                           </label>
 
@@ -1414,7 +1414,7 @@ export default function WeddingInvitation() {
 
                         {rsvpForm.attending === "yes" && (
                           <div className="pt-4 animate-in fade-in slide-in-from-top-2 duration-500 relative group">
-                            <label className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] absolute -top-4 left-0 transition-colors group-focus-within:text-[#d4af37]">
+                            <label className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] absolute -top-4 left-0 transition-colors group-focus-within:text-[#d4af37]">
                               Number of Guests
                             </label>
                             <div className="relative">
@@ -1441,7 +1441,7 @@ export default function WeddingInvitation() {
 
                         {(rsvpStatus === "success" || rsvpStatus === "error") && (
                           <p
-                            className={`text-[10px] text-center font-semibold tracking-widest uppercase mt-4 ${rsvpStatus === "success" ? "text-emerald-700" : "text-red-500"
+                            className={`text-xs text-center font-semibold tracking-widest uppercase mt-4 ${rsvpStatus === "success" ? "text-emerald-700" : "text-red-500"
                               }`}
                           >
                             {rsvpStatus === "success"
@@ -1454,7 +1454,7 @@ export default function WeddingInvitation() {
                           <button
                             type="submit"
                             disabled={rsvpStatus === "sending"}
-                            className="w-full border-[0.5px] border-[#d4af37] bg-transparent text-[#d4af37] hover:bg-[#d4af37] hover:text-white py-4 rounded-sm font-montserrat text-[10px] md:text-[11px] tracking-[0.3em] font-medium transition-all shadow-[0_4px_10px_rgba(0,0,0,0.03)] uppercase disabled:opacity-50"
+                            className="w-full border-[0.5px] border-[#d4af37] bg-transparent text-[#d4af37] hover:bg-[#d4af37] hover:text-white py-4 rounded-sm font-montserrat text-xs md:text-[13px] tracking-[0.3em] font-medium transition-all shadow-[0_4px_10px_rgba(0,0,0,0.03)] uppercase disabled:opacity-50"
                           >
                             {rsvpStatus === "sending" ? "SENDING..." : "CONFIRM ATTENDANCE"}
                           </button>
@@ -1502,7 +1502,7 @@ export default function WeddingInvitation() {
                       Best Wishes
                     </h2>
                     
-                    <p className="font-montserrat text-[10px] md:text-xs font-bold uppercase tracking-[0.5em] text-slate-500 max-w-xl mx-auto mb-20 leading-loose">
+                    <p className="font-montserrat text-xs md:text-xs font-bold uppercase tracking-[0.5em] text-slate-500 max-w-xl mx-auto mb-20 leading-loose">
                       Your presence is our greatest gift, but your words are our most cherished treasure.
                     </p>
 
@@ -1526,7 +1526,7 @@ export default function WeddingInvitation() {
                             transition={{ delay: 0.3 }}
                             className="relative"
                           >
-                            <label className="block font-montserrat text-[9px] font-bold uppercase tracking-[0.4em] text-[#d4af37] mb-6">Sent By</label>
+                            <label className="block font-montserrat text-[13px] font-bold uppercase tracking-[0.4em] text-[#d4af37] mb-6">Sent By</label>
                             <input
                               type="text"
                               placeholder="Your full name"
@@ -1547,7 +1547,7 @@ export default function WeddingInvitation() {
                              transition={{ delay: 0.5 }}
                              className="relative"
                           >
-                            <label className="block font-montserrat text-[9px] font-bold uppercase tracking-[0.4em] text-[#d4af37] mb-6">The Message</label>
+                            <label className="block font-montserrat text-[13px] font-bold uppercase tracking-[0.4em] text-[#d4af37] mb-6">The Message</label>
                             <textarea
                               rows={4}
                               placeholder="Write your message here..."
@@ -1565,7 +1565,7 @@ export default function WeddingInvitation() {
                             <motion.p
                               initial={{ opacity: 0, y: 10 }}
                               animate={{ opacity: 1, y: 0 }}
-                              className={`text-[10px] text-center font-bold tracking-[0.2em] uppercase ${wishStatus === "success" ? "text-emerald-700" : "text-red-500"}`}
+                              className={`text-xs text-center font-bold tracking-[0.2em] uppercase ${wishStatus === "success" ? "text-emerald-700" : "text-red-500"}`}
                             >
                               {wishStatus === "success" ? "✨ Your heart-felt wish has been sent ✨" : "Something went wrong. Please try again."}
                             </motion.p>
@@ -1583,7 +1583,7 @@ export default function WeddingInvitation() {
                               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                               
                               <span className="relative z-10 flex items-center gap-4">
-                                <span className="font-montserrat text-[10px] font-bold uppercase tracking-[0.4em] text-white">
+                                <span className="font-montserrat text-xs font-bold uppercase tracking-[0.4em] text-white">
                                   {wishStatus === "sending" ? "Sending..." : "Send Your Blessing"}
                                 </span>
                                 <Sparkles className="w-4 h-4 text-[#d4af37]" />
@@ -1652,7 +1652,7 @@ export default function WeddingInvitation() {
                     transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
                     className="flex flex-col items-center"
                   >
-                    <p className="font-montserrat text-[8px] md:text-[10px] tracking-[0.5em] text-[#d4af37]/70 uppercase font-bold mb-6">
+                    <p className="font-montserrat text-[8px] md:text-xs tracking-[0.5em] text-[#d4af37]/70 uppercase font-bold mb-6">
                       The Beginning of Forever
                     </p>
 
@@ -1667,16 +1667,16 @@ export default function WeddingInvitation() {
                     </div>
 
                     <div className="flex items-center justify-center gap-6 mt-6 overflow-hidden">
-                       <span className="font-cinzel text-[9px] text-[#f7e7ce]/60 tracking-widest uppercase">March 12 | 2027</span>
+                       <span className="font-cinzel text-[13px] text-[#f7e7ce]/60 tracking-widest uppercase">March 12 | 2027</span>
                        <div className="w-1 h-1 rounded-full bg-[#d4af37]/30" />
-                       <span className="font-cinzel text-[9px] text-[#f7e7ce]/60 tracking-widest uppercase">Eagles Lagoon</span>
+                       <span className="font-cinzel text-[13px] text-[#f7e7ce]/60 tracking-widest uppercase">Eagles Lagoon</span>
                     </div>
                   </motion.div>
 
                   {/* Copyright & Branding Bar */}
                   <div className="mt-12 pt-8 border-t border-[#d4af37]/10 w-full flex flex-col items-center gap-6">
                     <div className="flex flex-col gap-4 items-center">
-                       <p className="text-[8px] md:text-[9px] uppercase tracking-[0.4em] text-[#f7e7ce]/40 font-bold leading-relaxed flex items-center gap-4">
+                       <p className="text-[8px] md:text-[13px] uppercase tracking-[0.4em] text-[#f7e7ce]/40 font-bold leading-relaxed flex items-center gap-4">
                         <span>© 2027 Tharusha & Thinithi</span>
                         <span className="text-[#d4af37]/20">|</span>
                         <span>All Rights Reserved</span>
@@ -1688,7 +1688,7 @@ export default function WeddingInvitation() {
                         rel="noopener noreferrer"
                         className="group flex flex-col items-center gap-2"
                       >
-                        <span className="text-[9px] tracking-[0.2em] text-[#d4af37]/50 group-hover:text-[#d4af37] transition-all uppercase font-bold flex items-center gap-2">
+                        <span className="text-[13px] tracking-[0.2em] text-[#d4af37]/50 group-hover:text-[#d4af37] transition-all uppercase font-bold flex items-center gap-2">
                           Designed by invitemint
                         </span>
                         <motion.div 
@@ -1811,7 +1811,7 @@ function AdminPanel() {
 
       <div className="space-y-4">
         <div>
-          <label className="text-[10px] font-bold text-stone-500 uppercase tracking-widest mb-1 block">
+          <label className="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1 block">
             Base Hosted Link
           </label>
           <input
@@ -1824,7 +1824,7 @@ function AdminPanel() {
         </div>
 
         <div>
-          <label className="text-[10px] font-bold text-stone-500 uppercase tracking-widest mb-1 block">
+          <label className="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1 block">
             Prefix
           </label>
           <select
@@ -1843,7 +1843,7 @@ function AdminPanel() {
         </div>
 
         <div>
-          <label className="text-[10px] font-bold text-stone-500 uppercase tracking-widest mb-1 block">
+          <label className="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1 block">
             Guest Name
           </label>
           <input
@@ -1857,17 +1857,17 @@ function AdminPanel() {
 
         <button
           onClick={generateLink}
-          className="w-full bg-[#0284c7] text-white py-3 rounded-xl font-bold text-[10px] tracking-widest uppercase hover:bg-[#0369a1] transition-all"
+          className="w-full bg-[#0284c7] text-white py-3 rounded-xl font-bold text-xs tracking-widest uppercase hover:bg-[#0369a1] transition-all"
         >
           Generate Personalized Link
         </button>
 
         {generatedLink && (
           <div className="mt-4 p-3 bg-stone-50 rounded-xl border border-stone-100 flex flex-col gap-2">
-            <p className="text-[9px] text-stone-500 break-all font-mono">{generatedLink}</p>
+            <p className="text-[13px] text-stone-500 break-all font-mono">{generatedLink}</p>
             <button
               onClick={copyToClipboard}
-              className="flex items-center justify-center gap-2 bg-theme-100 text-theme-800 py-2 rounded-lg text-[10px] font-bold uppercase tracking-widest hover:bg-theme-200 transition-all"
+              className="flex items-center justify-center gap-2 bg-theme-100 text-theme-800 py-2 rounded-lg text-xs font-bold uppercase tracking-widest hover:bg-theme-200 transition-all"
             >
               {copied ? "Copied!" : "Copy Link"}
             </button>
@@ -1875,7 +1875,7 @@ function AdminPanel() {
         )}
       </div>
 
-      <p className="mt-4 text-[9px] text-stone-400 leading-relaxed">
+      <p className="mt-4 text-[13px] text-stone-400 leading-relaxed">
         Tip: Add <span className="font-bold">?admin=true</span> to any URL to open this menu again.
       </p>
     </div>
